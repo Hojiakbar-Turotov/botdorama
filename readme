@@ -1,0 +1,170 @@
+//module.exports.answerMessage = answerMessage;
+//require('./module')
+/*
+function checkFirstTwoLetters(str) {
+    if (str.length < 2) {
+        return "String juda qisqa";
+    }
+
+    let firstTwoLetters = str.substring(0, 2); // Boshidagi ikkita harfni oladi
+
+    switch (firstTwoLetters) {
+        case "AB":
+            return "Bu AB bilan boshlanadi";
+        case "CD":
+            return "Bu CD bilan boshlanadi";
+        case "EF":
+            return "Bu EF bilan boshlanadi";
+        default:
+            return "Ikkita harf mos kelmadi";
+    }
+}
+
+// Misol uchun:
+console.log(checkFirstTwoLetters("ABC")); // "Bu AB bilan boshlanadi"
+console.log(checkFirstTwoLetters("CDE")); // "Bu CD bilan boshlanadi"
+console.log(checkFirstTwoLetters("EFG")); // "Bu EF bilan boshlanadi"
+console.log(checkFirstTwoLetters("GH"));  // "Ikkita harf mos kelmadi"
+*/
+
+
+// database ni o'rniga fs module dan foydalanib hotiga yozib qo'yaverish
+
+/*
+const switchMoviesMap = {
+    'd1_': 0,
+    'd2_': 1,
+    'd3_': 2,
+    'd4_': 3,
+    'd5_': 4,
+    'd6_': 5,
+    'd7_': 6,
+    'd8_': 7
+};
+
+const index = switchMoviesMap[numberDorama];
+if (index !== undefined) {
+    switchMovies[index](ctx, data);
+} else {
+    ctx.reply('Xatolik yuz berdi.');
+}
+*/
+
+/* dorama uchun shablon 1 ta fasl bo'lsa quyidagi koddan nusxa ko'chiriladi.
+
+const nameDorama = ``;
+
+const movies = {
+    q_1: ``,
+    q_2: ``,
+    q_3: ``,
+    q_4: ``,
+    q_5: ``,
+    q_6: ``,
+    q_7: ``,
+    q_8: ``,
+}
+
+const inlineKeyboard = [
+    [
+        { text: '1', callback_data: 'd4_q_1' },
+        { text: '2', callback_data: 'd4_q_2' },
+        { text: '3', callback_data: 'd4_q_3' },
+        { text: '4', callback_data: 'd4_q_4' },
+    ],
+    [
+        { text: '5', callback_data: 'd4_q_5' },
+        { text: '6', callback_data: 'd4_q_6' },
+        { text: '7', callback_data: 'd4_q_7' },
+        { text: '8', callback_data: 'd4_q_8' },
+    ]
+];
+
+
+function sendDorama(ctx){
+ ctx.replyWithVideo(movies.q_1, {
+        caption: `${nameDorama}  \n 1-qism`,
+        reply_markup: {
+            inline_keyboard: inlineKeyboard
+        }
+    })
+}
+
+function swichDorama(ctx, data) {
+    ctx.deleteMessage();
+    switch (data) {
+        case 'd4_q_1':
+            ctx.replyWithVideo(movies.q_1, {
+                caption: `${nameDorama} \n 1-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+        case 'd4_q_2':
+            ctx.replyWithVideo(movies.q_2, {
+                caption: `${nameDorama}\n 2-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+        case 'd4_q_3':
+            ctx.replyWithVideo(movies.q_3, {
+                caption: `${nameDorama}\n 3-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+        case 'd4_q_4':
+            ctx.replyWithVideo(movies.q_4, {
+                caption: `${nameDorama}\n 4-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+        case 'd4_q_5':
+            ctx.replyWithVideo(movies.q_5, {
+                caption: `${nameDorama}\n 5-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+        case 'd4_q_6':
+            ctx.replyWithVideo(movies.q_6, {
+                caption: `${nameDorama}\n 6-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+        case 'd4_q_7':
+            ctx.replyWithVideo(movies.q_7, {
+                caption: `${nameDorama}\n 7-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+        case 'd4_q_8':
+            ctx.replyWithVideo(movies.q_8, {
+                caption: `${nameDorama}\n 8-qism`,
+                reply_markup: {
+                    inline_keyboard: inlineKeyboard
+                }
+            })
+            break;
+
+        default: {
+            ctx.reply('Hatolik')
+        }
+    }
+
+}
+module.exports = { sendDorama, swichDorama };
+
+
+*/
