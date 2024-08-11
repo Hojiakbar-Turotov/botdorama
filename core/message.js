@@ -127,39 +127,6 @@ function answerCallback(ctx, data) {
     } else {
         ctx.reply('Xatolik yuz berdi.');
     }
-
-    // switch(numberDorama){
-    //         case 'd1_':
-    //             swichMovies[0](ctx, data)
-    //         break;
-    //         case 'd2_':
-    //             swichMovies[1](ctx, data)
-    //         break;
-    //         case 'd3_':
-    //             swichMovies[2](ctx, data)
-    //         break;
-    //         case 'd4_':
-    //             swichMovies[3](ctx, data)
-    //         break;
-    //         case 'd5_':
-    //             swichMovies[4](ctx, data)
-    //         break;
-    //         case 'd6_':
-    //             swichMovies[5](ctx, data)
-    //         break;
-    //         case 'd7_':
-    //             swichMovies[6](ctx, data)
-    //         break;
-    //         case 'd8_':
-    //             swichMovies[7](ctx, data)
-    //         break;
-    //         default:
-    //             ctx.reply('Xatolik yuz berdi.')
-    //             break;
-    //     }
-
-
 }
 
 module.exports = { answerMessage, answerCallback };
-
