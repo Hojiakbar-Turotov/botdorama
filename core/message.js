@@ -1,19 +1,19 @@
 const { sendMovies, swichMovies } = require('./movies/index');
-const { isVideo } = require('./events/isVideo.js')
+const { isVideo } = require('./events/isVideo.js');
 
 
 function answerMessage(ctx) {
     isVideo(ctx);
     const message = ctx.message.text;
     if (message == '/start') {
-        ctx.reply(`Assalomu aleykum botdan foydalanishingiz mumkin. Dorama kodlarini @Dr_eam_dub kanalidan olishingiz mumkin.`)
+        ctx.reply(`Assalomu aleykum botdan foydalanishingiz mumkin. Dorama kodlarini @Dr_eam_dub kanalidan olishingiz mumkin.`);
     } else {
         if (message >= 0 && message <= sendMovies.length) {
-            let sendDorama = sendMovies[message - 1]
-            sendDorama(ctx)
+            let sendDorama = sendMovies[message - 1];
+            sendDorama(ctx);
         } else {
             ctx.reply('Bunday kodli dorama topilmadi. Dorama kodlarini @Dr_eam_dub kanalidan olishingiz mumkin.');
-        };
+        }
     }
 }
 

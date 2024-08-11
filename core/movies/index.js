@@ -6,6 +6,7 @@ const dorama5 = require('./5');
 const dorama6 = require('./6');
 const dorama7 = require('./7');
 const dorama8 = require('./8');
+const dorama9 = require('./9');
 
 
 const sendMovies = [
@@ -17,6 +18,7 @@ const sendMovies = [
     dorama6.sendDorama,
     dorama7.sendDorama,
     dorama8.sendDorama,
+    dorama9.sendDorama,
 ]
 
 const swichMovies = [
@@ -28,6 +30,7 @@ const swichMovies = [
     dorama6.swichDorama,
     dorama7.swichDorama,
     dorama8.swichDorama,
+    dorama9.swichDorama,
 ]
 
 module.exports =  {sendMovies, swichMovies};

@@ -1,9 +1,9 @@
-const express = require("express");
+const express = require('express');
 const dotenv = require('dotenv');
 
-dotenv.config()
+dotenv.config();
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4000;
 const app = express();
 
 app.get("/health", (req, res) => {

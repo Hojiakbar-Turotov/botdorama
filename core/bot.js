@@ -1,10 +1,10 @@
-const { Telegraf } = require('telegraf')
+const { Telegraf } = require('telegraf');
 const dotenv = require('dotenv');
 
-dotenv.config()
+dotenv.config();
 
 const bot = new Telegraf(process.env.token);
 
-bot.launch()
+bot.launch();
 
-module.exports = { bot }
+module.exports = { bot };
